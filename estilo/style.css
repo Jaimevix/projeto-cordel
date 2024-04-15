@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'sriracha';
+    src: url(../fontes/Sriracha-Regular.ttf) format(opentype);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'passionone-bold';
+    src: url(../fontes/PassionOne-Bold.ttf) format(truetype);
+}
+
+:root{
+    --cor0:black;
+    --cor1:white;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-header: 'passionone-bold', cursive;
+    --fonte-texto: 'sriracha', cursive;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--cor1);
+}
+
+header{
+    background-color: var(--cor0);
+    padding-top: 50px;
+}
+
+header>h1{
+    font-family: var(--fonte-header);
+    color: var(--cor1);
+    text-align: center;
+    font-size: 10vw;
+    margin: 0px;
+}
+
+header>p{
+    color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.linkmilton{
+    font-size: larger;
+    font-weight: bolder;
+    color: var(--cor1);
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+}
+
+.linkmilton:hover{
+    text-decoration: underline;
+}
+
+section> .joaninha{
+    background-image: url(../imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section> .livro{
+    background-image: url(../imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div>p{
+    color: var(--cor1);
+}
+.paragrafo1{
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    font-size: 3vw;
+    padding-left: 35px;
+}
+
+.paragrafo2{
+    font-family: var(--fonte-texto);
+    font-weight: bolder;
+    font-size: 3vw;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.596);
+    padding-left: 35px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    max-width: 36vw;
+    background-color: rgba(0, 0, 0, 0.747);
+    background-attachment: fixed;
+}
+
+footer{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+    text-align: center;
+    color: var(--cor1);
+    margin-bottom: 0px;
+}
+
+footer > p{
+padding: 10px;
+    margin: 0px;
+}
